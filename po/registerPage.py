@@ -31,7 +31,7 @@ class registerPage(BasePage):
         ele = self.driver.find_element(*RegisterPageLocators.REGISTER_BTN)
         ele.click()
 
-    def get_regiter_result(self,status):
+    def get_regiter_result(self,expect_status):
         if expect_status == True:
             login_success_message_text = self.driver.find_element(*RegisterPageLocators.SUCCESS_TEXT).text
             return login_success_message_text
