@@ -6,7 +6,7 @@ import logging
 def getRootPath():
     rootpath = os.path.dirname(os.path.abspath(__file__))
     while rootpath:
-        if os.path.exists(os.path.join(rootpath, 'readme.md')):
+        if os.path.exists(os.path.join(rootpath, 'README.md')):
             break
         rootpath = rootpath[0:rootpath.rfind(os.path.sep)]
 
@@ -14,7 +14,7 @@ def getRootPath():
 
 def getScreenShotsPath():
     rootPath = getRootPath()
-    screenshotpath = os.path.join(rootPath, "screenshots")
+    screenshotpath = os.path.join(rootPath, 'report', "screenshots")
     if not os.path.exists(screenshotpath):
         os.makedirs(screenshotpath)
     return screenshotpath
