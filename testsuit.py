@@ -9,9 +9,9 @@ def get_suite():
     # testsuite.addTests(loader)
 
     loader2 = unittest.TestLoader().loadTestsFromTestCase(LoginTest)
-    loader3 = unittest.TestLoader().loadTestsFromTestCase(RegisterTest)
+    # loader3 = unittest.TestLoader().loadTestsFromTestCase(RegisterTest)
     # testsuite.addTests(loader2)
-    testsuite.addTests(loader3)
+    testsuite.addTests(loader2)
 
     return testsuite
 

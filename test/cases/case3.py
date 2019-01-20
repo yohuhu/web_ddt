@@ -8,6 +8,8 @@ import time
 
 from ddt import ddt,data,file_data
 
+
+
 @ddt
 class RegisterTest(unittest.TestCase):
 
