@@ -1,6 +1,6 @@
 import unittest
 from test.cases.case2 import LoginTest
-
+from test.cases.case3 import RegisterTest
 
 def get_suite():
     testsuite = unittest.TestSuite()
@@ -9,7 +9,9 @@ def get_suite():
     # testsuite.addTests(loader)
 
     loader2 = unittest.TestLoader().loadTestsFromTestCase(LoginTest)
-    testsuite.addTests(loader2)
+    loader3 = unittest.TestLoader().loadTestsFromTestCase(RegisterTest)
+    # testsuite.addTests(loader2)
+    testsuite.addTests(loader3)
 
     return testsuite
 
